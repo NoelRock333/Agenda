@@ -1,0 +1,61 @@
+body {
+  background: #5d3a67;
+}
+#datetimepicker12 {
+  background: #fff;
+}
+#datetimepicker12 a {
+  color: #5d3a67;
+}
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+  background-color: #5d3a67;
+}
+.modal-content {
+  border-radius: 0px;
+}
+.btn {
+  border-radius: 0px;
+}
+#panel-seleccion .fecha-hora {
+  color: #fff;
+}
+#panel-seleccion .titulo,
+#panel-tipos .titulo,
+#panel-registro .titulo {
+  color: #fff;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  letter-spacing: 10px;
+  font-size: 50px;
+  font-family: "Quicksand";
+}
+#panel-registro label {
+  color: #fff;
+  font-family: "Quicksand";
+  font-size: 18px;
+}
+#panel-registro .form-control {
+  margin-bottom: 12px;
+  border-radius: 0px;
+  height: 40px;
+}
+#panel-tipos select {
+  font-size: 40px;
+  padding: 5px 14px;
+}
+#panel-tipos select option {
+  padding: 5px 14px;
+}
+.btn-siguiente,
+#btn-verificar {
+  background-color: #b58fc0;
+  border: #b58fc0;
+  color: #fff;
+  padding: 10px 24px;
+}
+.btn-siguiente:hover,
+#btn-verificar:hover {
+  color: #fff;
+  background-color: #a779b4;
+}

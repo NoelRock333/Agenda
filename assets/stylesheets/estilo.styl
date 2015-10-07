@@ -1,0 +1,59 @@
+$morado = #5d3a67
+body
+	background $morado
+#datetimepicker12
+	background white
+	a
+		color $morado
+	
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover
+	background-color $morado
+.modal-content
+	border-radius 0px
+.btn
+	border-radius 0px
+
+#panel-seleccion
+	//display none
+	.fecha-hora
+		color white
+#panel-seleccion,
+#panel-tipos,
+#panel-registro
+	.titulo
+		color white
+		margin-top 70px
+		margin-bottom 40px
+		letter-spacing 10px
+		font-size 50px
+		font-family "Quicksand" //"Muli"
+
+#panel-registro
+	label
+		color white
+		font-family "Quicksand"
+		font-size 18px
+	.form-control
+		margin-bottom 12px
+		border-radius 0px
+		height 40px
+		
+#panel-tipos
+	select
+		font-size 40px
+		padding 5px 14px
+		option
+			padding 5px 14px
+
+.btn-siguiente,
+#btn-verificar
+	background-color lighten($morado, 50%)
+	border lighten($morado, 50%)
+	//border-radius 0px
+	color white
+	padding 10px 24px
+	&:hover
+		color white
+		background-color lighten($morado, 40%)
+			
