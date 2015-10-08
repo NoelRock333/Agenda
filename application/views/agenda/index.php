@@ -131,7 +131,7 @@
 				<div class="col-sm-12 text-right">
 					<h2 class="titulo">Escoge la fecha</h2>
 				</div>
-				<div class="col-sm-4 col-sm-offset-8 text-right" >
+				<div class="col-sm-4 col-sm-offset-8 col-md-7 col-md-offset-5 text-right" >
 					<div id="datetimepicker12"></div>
 					<span class="fecha-hora"></span>
 					<br>
