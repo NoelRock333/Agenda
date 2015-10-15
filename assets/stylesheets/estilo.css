@@ -48,14 +48,19 @@ body {
   padding: 5px 14px;
 }
 .btn-siguiente,
-#btn-verificar {
+#btn-verificar,
+#btn-fecha {
   background-color: #b58fc0;
   border: #b58fc0;
   color: #fff;
   padding: 10px 24px;
 }
 .btn-siguiente:hover,
-#btn-verificar:hover {
+#btn-verificar:hover,
+#btn-fecha:hover {
   color: #fff;
   background-color: #a779b4;
+}
+#btn-verificar {
+  display: none;
 }

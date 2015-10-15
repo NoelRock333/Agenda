@@ -29,10 +29,20 @@
 			$(".picker-switch.accordion-toggle a").on("click", function(){
 				$titulo = $("#panel-seleccion .titulo");
 
-				if($(".timepicker").is(":visible"))
+				if($(".timepicker").is(":visible")){
 					$titulo.text("Escoge la fecha");
-				else
+					$("#btn-fecha").show();
+					$("#btn-verificar").hide();
+				}
+				else{
 					$titulo.text("Escoge el horario");
+					$("#btn-fecha").hide();
+					$("#btn-verificar").show();
+				}
+			});
+
+			$("#btn-fecha").on("click", function(){
+				$(".picker-switch.accordion-toggle a").trigger("click");
 			});
 
 			$(".btn-siguiente").on("click", function(){
@@ -136,6 +146,7 @@
 					<span class="fecha-hora"></span>
 					<br>
 					<br>
+					<div class="btn" id="btn-fecha">Siguiente</div>
 					<div class="btn" id="btn-verificar">Verificar</div>
 				</div>
 			</div>
