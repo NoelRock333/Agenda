@@ -36,12 +36,4 @@ class Agenda extends CI_Controller {
         );
         echo json_encode($arr);
     }
-
-    function lista_fechas() {
-        $this->load->model('detalle_fechas_model');
-
-        $arr = array();
-        $data['fechas'] = $this->detalle_fechas_model->get($arr);
-        $this->load->view('agenda/lista_fechas', $data);
-    }
 }
