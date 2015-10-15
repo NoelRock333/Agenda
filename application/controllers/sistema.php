@@ -4,7 +4,7 @@ class Sistema extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('sistema/index');
+		$this->load->view('sistema/agenda_view');
 	}
 
     function agregar_fecha() 
