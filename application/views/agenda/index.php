@@ -52,6 +52,9 @@
 			});
 
 			$("#btn-modificar").on("click", function(){
+				if($(".timepicker").is(":visible")){
+					$(".picker-switch.accordion-toggle a").trigger("click");
+				}
 				$(".panel-collapse.collapse").removeClass("in");
 				$("#panel-registro").addClass("in");
 			})
