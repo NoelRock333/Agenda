@@ -64,3 +64,8 @@ body {
 #btn-verificar {
   display: none;
 }
+.col-center {
+  margin-left: auto;
+  margin-right: auto;
+  float: auto !important;
+}

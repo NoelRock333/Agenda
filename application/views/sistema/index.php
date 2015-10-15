@@ -19,7 +19,7 @@
 			$('#datetimepicker12').datetimepicker({
 				inline: true,
 				locale: 'es'
-			}).change(function(){ console.log("algo")});
+			});
 
 			$("#datetimepicker12").on("dp.change", function(){
 				var fecha = $('#datetimepicker12').data('date');
@@ -83,7 +83,7 @@
 					tipo: 	$("#tipo").val()
 				}
 				$.ajax({
-					url: "<?php echo site_url('agenda/agregar_fecha') ?>",
+					url: "<?php echo site_url('sistema/agregar_fecha') ?>",
 					type: "POST",
 					dataType: "JSON",
 					data: datos,
@@ -102,10 +102,10 @@
 		<div class="panel-group" id="accordion">
 
 			<div id="panel-registro" class="row panel-collapse collapse in">
-				<div class="col-sm-12 text-right">
+				<div class="col-sm-12 text-center">
 					<h2 class="titulo">Formulario de registro</h2>
 				</div>
-				<div class="col-md-4 col-md-offset-8 text-right">
+				<div class="col-md-4 col-md-offset-4">
 					<div class="edit-field">
 						<label for="">Nombre</label>
 						<input type="text" class="form-control" name="nombre" id="nombre">
@@ -123,10 +123,10 @@
 			</div>
 
 			<div id="panel-tipos" class="row panel-collapse collapse">
-				<div class="col-sm-12 text-right">
+				<div class="col-sm-12 text-center">
 					<h2 class="titulo">Tipo de cita</h2>
 				</div>
-				<div class="col-sm-4 pull-right text-right">
+				<div class="col-md-4 col-md-offset-4 text-center">
 					<div class="edit-field">
 						<select name="tipo" id="tipo">
 							<option value="Grupal">Grupal</option>
@@ -141,10 +141,10 @@
 			</div>
 
 			<div id="panel-seleccion" class="row panel-collapse collapse">
-				<div class="col-sm-12 text-right">
+				<div class="col-sm-12 text-center">
 					<h2 class="titulo">Escoge la fecha</h2>
 				</div>
-				<div class="col-sm-4 col-sm-offset-8 col-md-7 col-md-offset-5 text-right" >
+				<div class="col-md-4 col-md-offset-4 text-right" >
 					<div id="datetimepicker12"></div>
 					<span class="fecha-hora"></span>
 					<br>
