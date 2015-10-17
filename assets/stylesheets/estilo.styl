@@ -18,6 +18,8 @@ body
 	//display none
 	.fecha-hora
 		color white
+#seccion-obituario,
+#seccion-cotizacion,
 #panel-seleccion,
 #panel-tipos,
 #panel-registro
@@ -27,18 +29,50 @@ body
 		margin-bottom 40px
 		letter-spacing 10px
 		font-size 50px
-		font-family "Quicksand" //"Muli"
+		font-family "Quicksand", sans-serif //"Muli"
 
+#seccion-cotizacion,
+#seccion-obituario,
 #panel-registro
 	label
 		color white
-		font-family "Quicksand"
+		font-family "Quicksand", sans-serif
 		font-size 18px
-	.form-control
+	input.form-control
 		margin-bottom 12px
 		border-radius 0px
 		height 40px
+	textarea.form-control
+		margin-bottom 12px
+		border-radius 0px
 		
+#seccion-obituario
+	.informacion
+		.foto-persona,
+		.foto-persona-adm
+			background #FFF
+			height 200px
+			width 200px
+			margin auto
+			margin-bottom 16px
+			overflow hidden
+			img
+				width 100%
+				height 100%
+		.foto-persona-adm 
+			text-align center
+			cursor pointer
+			img
+				cursor pointer
+		.nombre
+		.semblanza
+			display block
+			color white
+			margin-bottom 10px
+		.nombre
+			font-size 2em
+		.semblanza
+			font-size 1.7em
 #panel-tipos
 	select
 		font-size 40px
@@ -47,7 +81,9 @@ body
 			padding 5px 14px
 
 .btn-siguiente,
+#btn-compartir,
 #btn-verificar,
+#btn-contactar,
 #btn-fecha
 	background-color lighten($morado, 50%)
 	border lighten($morado, 50%)
@@ -61,7 +97,26 @@ body
 #btn-verificar
 	display none
 	
-.col-center
-	margin-left auto
-	margin-right auto
-	float auto !important
+#aviso
+	.bg-success,
+	.bg-danger
+		display none
+		padding 20px 15px
+
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	//filter: alpha(opacity=0);
+}

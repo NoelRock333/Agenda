@@ -13,7 +13,7 @@
 			<a href="<?php echo site_url('admin/lista_fechas')?>">Fechas agendadas</a>
 		</li>
 		<li>
-			<a href="<?php echo site_url('admin/lista_cotizacion')?>">Cotizaciones solicitadas</a>
+			<a href="<?php echo site_url('admin/lista_cotizaciones')?>">Cotizaciones solicitadas</a>
 		</li>
 		<li>
 			<a href="<?php echo site_url('admin/nuevo_obituario')?>">Obituario</a>

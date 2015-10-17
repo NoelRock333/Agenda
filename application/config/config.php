@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/Agenda';
+$config['base_url'] = 'http://localhost/CieloEternoSistema';
 
 /*
 |--------------------------------------------------------------------------

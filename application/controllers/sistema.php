@@ -36,4 +36,39 @@ class Sistema extends CI_Controller {
         );
         echo json_encode($arr);
     }
+
+    function cotizacion()
+    {
+        $this->load->view("sistema/cotizacion_view");
+    }
+
+    function solicitar_cotizacion(){
+        $datos["nombre"]    = $this->input->post("nombre");
+        $datos["telefono"]  = $this->input->post("telefono");
+        $datos["correo"]    = $this->input->post("correo");
+        $this->load->model("detalle_cotizacion_model");
+        $id = $this->detalle_cotizacion_model->insert($datos);
+        $arr = array(
+            "id" => $id
+        );
+        echo json_encode($arr);
+    }
+
+    function obituario($id_obituario = '1')
+    {
+        $this->load->model("obituario_model");
+        $datos['obituario'] = $this->obituario_model->get(array("id"=>$id_obituario));
+        $this->load->view("sistema/obituario_view", $datos);
+    }
+
+    function compartir_historia(){
+        $datos['id_obituario'] = $this->input->post("id_obituario");
+        $datos['anecdota']   = $this->input->post("anecdota");
+        $this->load->model("detalle_obituario_model");
+        $id_detalle = $this->detalle_obituario_model->insert($datos);
+        $arr = array(
+            "id" => $id_detalle
+        );
+        echo json_encode($arr);
+    }
 }

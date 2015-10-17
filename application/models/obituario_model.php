@@ -1,5 +1,5 @@
 <?php 
-class Detalle_fechas_model extends CI_Model {
+class Obituario_model extends CI_Model {
 
 	public function __construct() {
         $this->load->database();
@@ -7,24 +7,24 @@ class Detalle_fechas_model extends CI_Model {
     }
 
     function insert($datos){
-    	$this->db->insert("detalle_fechas", $datos);
+    	$this->db->insert("obituario", $datos);
         return $this->db->insert_id();
     }
 
     function get($datos){
     	$this->db->where($datos);
-    	$res = $this->db->get('detalle_fechas');
+    	$res = $this->db->get('obituario');
         return $res->result();
     }
 
     function delete($datos){
-    	$this->db->delete("detalle_fechas", $datos);
+    	$this->db->delete("obituario", $datos);
         return $this->db->affected_rows();
     }
     
-    function get_fecha($id_fecha){
-        $this->db->from("detalle_fechas");
-        $this->db->where("id", $id_fecha);
+    function get_fecha($id_persona){
+        $this->db->from("obituario");
+        $this->db->where("id", $id_persona);
         $res = $this->db->get();
         return $res->row();
     }
